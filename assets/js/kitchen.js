@@ -21,8 +21,8 @@ allFilter.forEach(all => {
 
 
 showFilter.addEventListener('click', () => {
-    filters.classList.toggle('d-none')
+    filters.classList.remove('d-none')
 });
 closeFilter.addEventListener('click', () => {
-    filters.classList.toggle('d-none')
+    filters.classList.add('d-none')
 });
