@@ -265,7 +265,7 @@
                                 </div>
                                 <p class="review__text">“Спасибо огромное за новую кухонную мебель! Аккуратную, белую в глянце, с фартуком и столешницей под натуральное дерево. Мы давно планировали...”</p>
                             </div>
-                            <a href="#" class="review__read">Читать отзыв</a>
+                            <button class="review__read">Читать отзыв</button>
                         </div>
                         
                         <div class="review d-flex flex-column justify-content-between">
@@ -280,7 +280,7 @@
                                 </div>
                                 <p class="review__text">“Спасибо вашей компании за качественно и в срок изготовленную, быстро собранную прихожую! Приятно войти в квартиру!”</p>
                             </div>
-                            <a href="#" class="review__read">Читать отзыв</a>
+                            <button class="review__read">Читать отзыв</button>
                         </div>
                         
                         <div class="review d-flex flex-column justify-content-between">
@@ -294,7 +294,7 @@
                                 </div>
                                 <p class="review__text">К покупке на заказ относилась с долей опасения, потому что уже обжигалась. Но убедила сестра, которой вы в прошлом году изготовили прихожую. Ее...</p>
                             </div>
-                            <a href="#" class="review__read">Читать отзыв</a>
+                            <button class="review__read">Читать отзыв</button>
                         </div>
                         <div class="review d-flex flex-column justify-content-between">
                             <div class="">
@@ -307,7 +307,7 @@
                                 </div>
                                 <p class="review__text">“Спасибо огромное за новую кухонную мебель! Аккуратную, белую в глянце, с фартуком и столешницей под натуральное дерево. Мы давно планировали...”</p>
                             </div>
-                            <a href="#" class="review__read">Читать отзыв</a>
+                            <button class="review__read">Читать отзыв</button>
                         </div>
                         
                         <div class="review d-flex flex-column justify-content-between">
@@ -322,7 +322,7 @@
                                 </div>
                                 <p class="review__text">“Спасибо вашей компании за качественно и в срок изготовленную, быстро собранную прихожую! Приятно войти в квартиру!”</p>
                             </div>
-                            <a href="#" class="review__read">Читать отзыв</a>
+                            <button class="review__read">Читать отзыв</button>
                         </div>
                         
                         <div class="review d-flex flex-column justify-content-between">
@@ -336,7 +336,7 @@
                                 </div>
                                 <p class="review__text">К покупке на заказ относилась с долей опасения, потому что уже обжигалась. Но убедила сестра, которой вы в прошлом году изготовили прихожую. Ее...</p>
                             </div>
-                            <a href="#" class="review__read">Читать отзыв</a>
+                            <button class="review__read">Читать отзыв</button>
                         </div>
                         <div class="review d-flex flex-column justify-content-between">
                             <div class="">
@@ -349,7 +349,7 @@
                                 </div>
                                 <p class="review__text">“Спасибо огромное за новую кухонную мебель! Аккуратную, белую в глянце, с фартуком и столешницей под натуральное дерево. Мы давно планировали...”</p>
                             </div>
-                            <a href="#" class="review__read">Читать отзыв</a>
+                            <button class="review__read">Читать отзыв</button>
                         </div>
                         
                         <div class="review d-flex flex-column justify-content-between">
@@ -364,7 +364,7 @@
                                 </div>
                                 <p class="review__text">“Спасибо вашей компании за качественно и в срок изготовленную, быстро собранную прихожую! Приятно войти в квартиру!”</p>
                             </div>
-                            <a href="#" class="review__read">Читать отзыв</a>
+                            <button class="review__read">Читать отзыв</button>
                         </div>
                         
                         <div class="review d-flex flex-column justify-content-between">
@@ -378,7 +378,7 @@
                                 </div>
                                 <p class="review__text">К покупке на заказ относилась с долей опасения, потому что уже обжигалась. Но убедила сестра, которой вы в прошлом году изготовили прихожую. Ее...</p>
                             </div>
-                            <a href="#" class="review__read">Читать отзыв</a>
+                            <button class="review__read">Читать отзыв</button>
                         </div>
                     </div>
                 </div>
@@ -621,26 +621,136 @@
 
 
 
+    <div class="popUp buy d-none">
+        <div class="popUp-content">
+            <button class="popUp__close">
+                <svg width="20" height="20" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.33023 17.5C1.16604 17.5 1.00552 17.4514 0.868986 17.3601C0.732451 17.2689 0.626034 17.1393 0.563195 16.9876C0.500356 16.8359 0.483917 16.669 0.515959 16.5079C0.548 16.3469 0.627082 16.199 0.743202 16.0829L16.083 0.743034C16.2387 0.587344 16.4499 0.499878 16.6701 0.499878C16.8903 0.499878 17.1014 0.587344 17.2571 0.743034C17.4128 0.898725 17.5003 1.10989 17.5003 1.33007C17.5003 1.55024 17.4128 1.76141 17.2571 1.9171L1.91726 17.2569C1.84025 17.3341 1.74874 17.3953 1.648 17.437C1.54726 17.4787 1.43927 17.5001 1.33023 17.5Z" fill="#fff"/>
+                    <path d="M16.67 17.5C16.561 17.5001 16.453 17.4787 16.3523 17.437C16.2515 17.3953 16.16 17.3341 16.083 17.2569L0.743156 1.9171C0.587466 1.76141 0.5 1.55024 0.5 1.33007C0.5 1.10989 0.587466 0.898725 0.743156 0.743034C0.898847 0.587344 1.11001 0.499878 1.33019 0.499878C1.55037 0.499878 1.76153 0.587344 1.91722 0.743034L17.2571 16.0829C17.3732 16.199 17.4523 16.3469 17.4843 16.5079C17.5163 16.669 17.4999 16.8359 17.4371 16.9876C17.3742 17.1393 17.2678 17.2689 17.1313 17.3601C16.9947 17.4514 16.8342 17.5 16.67 17.5Z" fill="#fff"/>
+                </svg>
+            </button>
+            <form class="form">
+                <h2 class="popUp__title">КУПИТЬ <br> В ОДИН КЛИК</h2>
+
+                <div class="input-box position-relative">
+                    <input type="text" class="form__inp phone" placeholder="Ваш телефон" required>
+                    <svg width="28" height="29" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.18193 0.503906H2.42752C2.16492 0.503906 1.73856 0.610259 1.37791 1.03482C1.01701 1.45966 0 2.48651 0 4.57489C0 6.66328 1.41077 8.68114 1.60739 8.96465C1.80427 9.24788 4.33062 13.6703 8.33189 15.3717C11.6573 16.7856 12.3342 16.5043 13.0557 16.4335C13.7776 16.363 15.385 15.407 15.713 14.416C16.0411 13.4249 16.0411 12.5752 15.9427 12.3978C15.8442 12.2209 15.5816 12.1149 15.1881 11.9027C14.7943 11.6903 12.8649 10.6461 12.504 10.5042C12.1431 10.3629 11.8808 10.2921 11.6182 10.7172C11.3556 11.1415 10.5825 12.1231 10.3528 12.4063C10.1233 12.6898 9.89354 12.7254 9.49977 12.513C9.10601 12.3 7.85111 11.8439 6.34729 10.3981C5.17677 9.27291 4.36453 7.83799 4.13479 7.41315C3.90532 6.98859 4.11035 6.75882 4.30776 6.54697C4.48466 6.35702 4.7236 6.0971 4.92048 5.84942C5.1171 5.60145 5.17309 5.42458 5.30452 5.14135C5.43569 4.85812 5.36997 4.61015 5.27167 4.39802C5.17309 4.1856 4.41763 2.08669 4.0675 1.24724H4.06776C3.77284 0.540305 3.4624 0.516418 3.18193 0.503906Z" fill="#fff"/>
+                    </svg>
+                </div>
+                <button class="form__btn">Заказать звонок</button>
+                <div class="d-flex align-items-start">
+                    <input type="checkbox" class="form__check" required checked>
+                    <p class="form__text">Я соглашаюсь на передачу персональных данных согласно <br>
+                        <a href="#">Политике конфиденциальности</a>
+                        | 
+                        <a href="#">Пользовательскому соглашению</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <div class="popUp backCall d-none">
         <div class="popUp-content">
             <button class="popUp__close">
-                <svg width="16" height="16" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1.33023 17.5C1.16604 17.5 1.00552 17.4514 0.868986 17.3601C0.732451 17.2689 0.626034 17.1393 0.563195 16.9876C0.500356 16.8359 0.483917 16.669 0.515959 16.5079C0.548 16.3469 0.627082 16.199 0.743202 16.0829L16.083 0.743034C16.2387 0.587344 16.4499 0.499878 16.6701 0.499878C16.8903 0.499878 17.1014 0.587344 17.2571 0.743034C17.4128 0.898725 17.5003 1.10989 17.5003 1.33007C17.5003 1.55024 17.4128 1.76141 17.2571 1.9171L1.91726 17.2569C1.84025 17.3341 1.74874 17.3953 1.648 17.437C1.54726 17.4787 1.43927 17.5001 1.33023 17.5Z" fill="#1D1D1D"/>
-                    <path d="M16.67 17.5C16.561 17.5001 16.453 17.4787 16.3523 17.437C16.2515 17.3953 16.16 17.3341 16.083 17.2569L0.743156 1.9171C0.587466 1.76141 0.5 1.55024 0.5 1.33007C0.5 1.10989 0.587466 0.898725 0.743156 0.743034C0.898847 0.587344 1.11001 0.499878 1.33019 0.499878C1.55037 0.499878 1.76153 0.587344 1.91722 0.743034L17.2571 16.0829C17.3732 16.199 17.4523 16.3469 17.4843 16.5079C17.5163 16.669 17.4999 16.8359 17.4371 16.9876C17.3742 17.1393 17.2678 17.2689 17.1313 17.3601C16.9947 17.4514 16.8342 17.5 16.67 17.5Z" fill="#1D1D1D"/>
+                <svg width="20" height="20" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.33023 17.5C1.16604 17.5 1.00552 17.4514 0.868986 17.3601C0.732451 17.2689 0.626034 17.1393 0.563195 16.9876C0.500356 16.8359 0.483917 16.669 0.515959 16.5079C0.548 16.3469 0.627082 16.199 0.743202 16.0829L16.083 0.743034C16.2387 0.587344 16.4499 0.499878 16.6701 0.499878C16.8903 0.499878 17.1014 0.587344 17.2571 0.743034C17.4128 0.898725 17.5003 1.10989 17.5003 1.33007C17.5003 1.55024 17.4128 1.76141 17.2571 1.9171L1.91726 17.2569C1.84025 17.3341 1.74874 17.3953 1.648 17.437C1.54726 17.4787 1.43927 17.5001 1.33023 17.5Z" fill="#fff"/>
+                    <path d="M16.67 17.5C16.561 17.5001 16.453 17.4787 16.3523 17.437C16.2515 17.3953 16.16 17.3341 16.083 17.2569L0.743156 1.9171C0.587466 1.76141 0.5 1.55024 0.5 1.33007C0.5 1.10989 0.587466 0.898725 0.743156 0.743034C0.898847 0.587344 1.11001 0.499878 1.33019 0.499878C1.55037 0.499878 1.76153 0.587344 1.91722 0.743034L17.2571 16.0829C17.3732 16.199 17.4523 16.3469 17.4843 16.5079C17.5163 16.669 17.4999 16.8359 17.4371 16.9876C17.3742 17.1393 17.2678 17.2689 17.1313 17.3601C16.9947 17.4514 16.8342 17.5 16.67 17.5Z" fill="#fff"/>
                 </svg>
             </button>
-            <h2 class="popUp__title text-center">Заказать звонок</h2>
+            <form class="form">
+                <h2 class="popUp__title">ОБРАТНЫЙ  ЗВОНОК</h2>
 
-            <form class="backCall-form">
                 <div class="input-box position-relative">
                     <input type="text" class="form__inp" placeholder="Ваше имя" required>
-                    <img src="assets/img/svg/user.svg" alt="" class="icon">
+                    <img src="assets/img/svg/user2.svg" alt="">
                 </div>
                 <div class="input-box position-relative">
                     <input type="text" class="form__inp phone" placeholder="Ваш телефон" required>
-                    <img src="assets/img/svg/call2.svg" alt="" class="icon">
+                    <svg width="28" height="29" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.18193 0.503906H2.42752C2.16492 0.503906 1.73856 0.610259 1.37791 1.03482C1.01701 1.45966 0 2.48651 0 4.57489C0 6.66328 1.41077 8.68114 1.60739 8.96465C1.80427 9.24788 4.33062 13.6703 8.33189 15.3717C11.6573 16.7856 12.3342 16.5043 13.0557 16.4335C13.7776 16.363 15.385 15.407 15.713 14.416C16.0411 13.4249 16.0411 12.5752 15.9427 12.3978C15.8442 12.2209 15.5816 12.1149 15.1881 11.9027C14.7943 11.6903 12.8649 10.6461 12.504 10.5042C12.1431 10.3629 11.8808 10.2921 11.6182 10.7172C11.3556 11.1415 10.5825 12.1231 10.3528 12.4063C10.1233 12.6898 9.89354 12.7254 9.49977 12.513C9.10601 12.3 7.85111 11.8439 6.34729 10.3981C5.17677 9.27291 4.36453 7.83799 4.13479 7.41315C3.90532 6.98859 4.11035 6.75882 4.30776 6.54697C4.48466 6.35702 4.7236 6.0971 4.92048 5.84942C5.1171 5.60145 5.17309 5.42458 5.30452 5.14135C5.43569 4.85812 5.36997 4.61015 5.27167 4.39802C5.17309 4.1856 4.41763 2.08669 4.0675 1.24724H4.06776C3.77284 0.540305 3.4624 0.516418 3.18193 0.503906Z" fill="#fff"/>
+                    </svg>
                 </div>
-                <button class="form__submit">Отправить</button>
+                <button class="form__btn">Заказать звонок</button>
+                <div class="d-flex align-items-start">
+                    <input type="checkbox" class="form__check" required checked>
+                    <p class="form__text">Я соглашаюсь на передачу персональных данных согласно <br>
+                        <a href="#">Политике конфиденциальности</a>
+                        | 
+                        <a href="#">Пользовательскому соглашению</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="popUp consultation d-none">
+        <div class="popUp-content">
+            <button class="popUp__close">
+                <svg width="20" height="20" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.33023 17.5C1.16604 17.5 1.00552 17.4514 0.868986 17.3601C0.732451 17.2689 0.626034 17.1393 0.563195 16.9876C0.500356 16.8359 0.483917 16.669 0.515959 16.5079C0.548 16.3469 0.627082 16.199 0.743202 16.0829L16.083 0.743034C16.2387 0.587344 16.4499 0.499878 16.6701 0.499878C16.8903 0.499878 17.1014 0.587344 17.2571 0.743034C17.4128 0.898725 17.5003 1.10989 17.5003 1.33007C17.5003 1.55024 17.4128 1.76141 17.2571 1.9171L1.91726 17.2569C1.84025 17.3341 1.74874 17.3953 1.648 17.437C1.54726 17.4787 1.43927 17.5001 1.33023 17.5Z" fill="#fff"/>
+                    <path d="M16.67 17.5C16.561 17.5001 16.453 17.4787 16.3523 17.437C16.2515 17.3953 16.16 17.3341 16.083 17.2569L0.743156 1.9171C0.587466 1.76141 0.5 1.55024 0.5 1.33007C0.5 1.10989 0.587466 0.898725 0.743156 0.743034C0.898847 0.587344 1.11001 0.499878 1.33019 0.499878C1.55037 0.499878 1.76153 0.587344 1.91722 0.743034L17.2571 16.0829C17.3732 16.199 17.4523 16.3469 17.4843 16.5079C17.5163 16.669 17.4999 16.8359 17.4371 16.9876C17.3742 17.1393 17.2678 17.2689 17.1313 17.3601C16.9947 17.4514 16.8342 17.5 16.67 17.5Z" fill="#fff"/>
+                </svg>
+            </button>
+            <form class="form">
+                <h2 class="popUp__title">БЕСПЛАТНАЯ
+                    КОНСУЛЬТАЦИЯ</h2>
+
+                <div class="input-box position-relative">
+                    <input type="text" class="form__inp" placeholder="Ваше имя" required>
+                    <img src="assets/img/svg/user2.svg" alt="">
+                </div>
+                <div class="input-box position-relative">
+                    <input type="text" class="form__inp phone" placeholder="Ваш телефон" required>
+                    <svg width="28" height="29" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.18193 0.503906H2.42752C2.16492 0.503906 1.73856 0.610259 1.37791 1.03482C1.01701 1.45966 0 2.48651 0 4.57489C0 6.66328 1.41077 8.68114 1.60739 8.96465C1.80427 9.24788 4.33062 13.6703 8.33189 15.3717C11.6573 16.7856 12.3342 16.5043 13.0557 16.4335C13.7776 16.363 15.385 15.407 15.713 14.416C16.0411 13.4249 16.0411 12.5752 15.9427 12.3978C15.8442 12.2209 15.5816 12.1149 15.1881 11.9027C14.7943 11.6903 12.8649 10.6461 12.504 10.5042C12.1431 10.3629 11.8808 10.2921 11.6182 10.7172C11.3556 11.1415 10.5825 12.1231 10.3528 12.4063C10.1233 12.6898 9.89354 12.7254 9.49977 12.513C9.10601 12.3 7.85111 11.8439 6.34729 10.3981C5.17677 9.27291 4.36453 7.83799 4.13479 7.41315C3.90532 6.98859 4.11035 6.75882 4.30776 6.54697C4.48466 6.35702 4.7236 6.0971 4.92048 5.84942C5.1171 5.60145 5.17309 5.42458 5.30452 5.14135C5.43569 4.85812 5.36997 4.61015 5.27167 4.39802C5.17309 4.1856 4.41763 2.08669 4.0675 1.24724H4.06776C3.77284 0.540305 3.4624 0.516418 3.18193 0.503906Z" fill="#fff"/>
+                    </svg>
+                </div>
+                <button class="form__btn">Заказать звонок</button>
+                <div class="d-flex align-items-start">
+                    <input type="checkbox" class="form__check" required checked>
+                    <p class="form__text">Я соглашаюсь на передачу персональных данных согласно <br>
+                        <a href="#">Политике конфиденциальности</a>
+                        | 
+                        <a href="#">Пользовательскому соглашению</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="popUp callPopUp d-none">
+        <div class="popUp-content">
+            <button class="popUp__close">
+                <svg width="20" height="20" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.33023 17.5C1.16604 17.5 1.00552 17.4514 0.868986 17.3601C0.732451 17.2689 0.626034 17.1393 0.563195 16.9876C0.500356 16.8359 0.483917 16.669 0.515959 16.5079C0.548 16.3469 0.627082 16.199 0.743202 16.0829L16.083 0.743034C16.2387 0.587344 16.4499 0.499878 16.6701 0.499878C16.8903 0.499878 17.1014 0.587344 17.2571 0.743034C17.4128 0.898725 17.5003 1.10989 17.5003 1.33007C17.5003 1.55024 17.4128 1.76141 17.2571 1.9171L1.91726 17.2569C1.84025 17.3341 1.74874 17.3953 1.648 17.437C1.54726 17.4787 1.43927 17.5001 1.33023 17.5Z" fill="#fff"/>
+                    <path d="M16.67 17.5C16.561 17.5001 16.453 17.4787 16.3523 17.437C16.2515 17.3953 16.16 17.3341 16.083 17.2569L0.743156 1.9171C0.587466 1.76141 0.5 1.55024 0.5 1.33007C0.5 1.10989 0.587466 0.898725 0.743156 0.743034C0.898847 0.587344 1.11001 0.499878 1.33019 0.499878C1.55037 0.499878 1.76153 0.587344 1.91722 0.743034L17.2571 16.0829C17.3732 16.199 17.4523 16.3469 17.4843 16.5079C17.5163 16.669 17.4999 16.8359 17.4371 16.9876C17.3742 17.1393 17.2678 17.2689 17.1313 17.3601C16.9947 17.4514 16.8342 17.5 16.67 17.5Z" fill="#fff"/>
+                </svg>
+            </button>
+            <form class="form">
+                <h2 class="popUp__title">ВЫЗОВ
+                    ЗАМЕРЩИКА</h2>
+
+                <div class="input-box position-relative">
+                    <input type="text" class="form__inp" placeholder="Ваше имя" required>
+                    <img src="assets/img/svg/user2.svg" alt="">
+                </div>
+                <div class="input-box position-relative">
+                    <input type="text" class="form__inp phone" placeholder="Ваш телефон" required>
+                    <svg width="28" height="29" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.18193 0.503906H2.42752C2.16492 0.503906 1.73856 0.610259 1.37791 1.03482C1.01701 1.45966 0 2.48651 0 4.57489C0 6.66328 1.41077 8.68114 1.60739 8.96465C1.80427 9.24788 4.33062 13.6703 8.33189 15.3717C11.6573 16.7856 12.3342 16.5043 13.0557 16.4335C13.7776 16.363 15.385 15.407 15.713 14.416C16.0411 13.4249 16.0411 12.5752 15.9427 12.3978C15.8442 12.2209 15.5816 12.1149 15.1881 11.9027C14.7943 11.6903 12.8649 10.6461 12.504 10.5042C12.1431 10.3629 11.8808 10.2921 11.6182 10.7172C11.3556 11.1415 10.5825 12.1231 10.3528 12.4063C10.1233 12.6898 9.89354 12.7254 9.49977 12.513C9.10601 12.3 7.85111 11.8439 6.34729 10.3981C5.17677 9.27291 4.36453 7.83799 4.13479 7.41315C3.90532 6.98859 4.11035 6.75882 4.30776 6.54697C4.48466 6.35702 4.7236 6.0971 4.92048 5.84942C5.1171 5.60145 5.17309 5.42458 5.30452 5.14135C5.43569 4.85812 5.36997 4.61015 5.27167 4.39802C5.17309 4.1856 4.41763 2.08669 4.0675 1.24724H4.06776C3.77284 0.540305 3.4624 0.516418 3.18193 0.503906Z" fill="#fff"/>
+                    </svg>
+                </div>
+                <button class="form__btn">Заказать звонок</button>
+                <div class="d-flex align-items-start">
+                    <input type="checkbox" class="form__check" required checked>
+                    <p class="form__text">Я соглашаюсь на передачу персональных данных согласно <br>
+                        <a href="#">Политике конфиденциальности</a>
+                        | 
+                        <a href="#">Пользовательскому соглашению</a>
+                    </p>
+                </div>
             </form>
         </div>
     </div>
@@ -653,46 +763,145 @@
                     <path d="M16.67 17.5C16.561 17.5001 16.453 17.4787 16.3523 17.437C16.2515 17.3953 16.16 17.3341 16.083 17.2569L0.743156 1.9171C0.587466 1.76141 0.5 1.55024 0.5 1.33007C0.5 1.10989 0.587466 0.898725 0.743156 0.743034C0.898847 0.587344 1.11001 0.499878 1.33019 0.499878C1.55037 0.499878 1.76153 0.587344 1.91722 0.743034L17.2571 16.0829C17.3732 16.199 17.4523 16.3469 17.4843 16.5079C17.5163 16.669 17.4999 16.8359 17.4371 16.9876C17.3742 17.1393 17.2678 17.2689 17.1313 17.3601C16.9947 17.4514 16.8342 17.5 16.67 17.5Z" fill="#1D1D1D"/>
                 </svg>
             </button>
-            <h2 class="popUp__title text-center">Заказать расчет</h2>
-            <p class="popUp__sub-text text-center">Фиксируем скидку в <span>10%</span> на весь ассортимент. Оставьте заявку сейчас, скидка сохранится.</p>
-
-            <form class="backCall-form">
-                <div class="input-box position-relative">
-                    <input type="text" class="form__inp phone" placeholder="Ваш телефон" required>
-                    <img src="assets/img/svg/call2.svg" alt="" class="icon">
-                </div>
-                <div class="desired-budget">
-                    <div class="desired-budget-title d-flex align-items-center justify-content-between">
-                        <div class="d-flex align-items-center">
-                            <img src="assets/img/svg/budget.svg" alt="" class="icon-budget me-2">
-                        <span class="desired-budget__active">Желаемый бюджет</span>
-                        </div>
-                        <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.23964 0.210883C0.55916 -0.0702944 1.0772 -0.0702944 1.39672 0.210883L6 4.26177L10.6033 0.210883C10.9228 -0.070294 11.4408 -0.070294 11.7604 0.210884C12.0799 0.492061 12.0799 0.94794 11.7604 1.22912L6.57854 5.78912C6.25902 6.07029 5.74098 6.07029 5.42146 5.78912L0.23964 1.22912C-0.07988 0.947939 -0.07988 0.492061 0.23964 0.210883Z" fill="#6D845C"/>
-                        </svg>
+            <h2 class="popUp__title text-center">РАССЧИТАТЬ СТОИМОСТЬ</h2>
+            <form class="calculate-form">
+                <div class="calculate-form-box">
+                    <h3 class="calculate-form__title">ФОРМА:</h3>
+                    <div class="d-flex flex-wrap">
+                        <label for="Прямая" class="form-lab">
+                            <input type="radio" id="Прямая" name="форма" class="inp__rad" checked>
+                            Прямая
+                        </label>
+                        <label for="Угловая" class="form-lab">
+                            <input type="radio" id="Угловая" name="форма" class="inp__rad">
+                            Угловая
+                        </label>
+                        <label for="П-образная" class="form-lab">
+                            <input type="radio" id="П-образная" name="форма" class="inp__rad">
+                            П-образная
+                        </label>
                     </div>
-                    <ul class="desired-budget-item">
-                        <li>90 т.р. - 140 т.р.</li>
-                        <li>140 т.р. - 200 т.р.</li>
-                        <li>свыше 200 т.р.</li>
-                    </ul>
                 </div>
 
-                <div class="d-flex align-items-start mt-3">
-                    <input type="checkbox" class="form__check" required checked>
-                    <p class="form__text">Я соглашаюсь на передачу персональных данных согласно
-                        <a href="#">Политике конфиденциальности</a>
-                        | 
-                        <a href="#">Пользовательскому соглашению</a>
-                    </p>
+                <div class="calculate-form-box">
+                    <h3 class="calculate-form__title">РАЗМЕРЫ ПО СТЕНЕ (СМ.):</h3>
+                    <div class="d-flex size">
+                        <div class="d-flex align-items-start flex-column me-3">
+                            <p class="size__title">СТОРОНА А:</p>
+                            <div class="">
+                                <input type="radio" id="a" name="size" class="inp__rad">
+                                <label for="a" class="form-lab">СТОРОНА A</label>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start flex-column">
+                            <p class="size__title">СТОРОНА Б:</p>
+                            <div class="">
+                                <input type="radio" id="b" name="size" class="inp__rad">
+                                <label for="b" class="form-lab">СТОРОНА Б</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="calculate-form-box material">
+                    <h3 class="calculate-form__title">МАТЕРИАЛ ФАСАДОВ:</h3>
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <label for="m1" class="form-lab">
+                            <input type="radio" id="m1" name="материал" class="inp__rad" checked>
+                            МДФ, пленка ПВХ
+                        </label>
+                        <label for="m1" class="form-lab">
+                            <input type="radio" id="m1" name="материал" class="inp__rad">
+                            МДФ с патиной
+                        </label>
+                        <label for="m1" class="form-lab">
+                            <input type="radio" id="m1" name="материал" class="inp__rad">
+                            МДФ, пластик Агра
+                        </label>
+                        <label for="m1" class="form-lab">
+                            <input type="radio" id="m1" name="материал" class="inp__rad">
+                            Alvic Luxe
+                        </label>
+                        <label for="m1" class="form-lab">
+                            <input type="radio" id="m1" name="материал" class="inp__rad">
+                            МДФ, эмаль
+                        </label>
+                        <label for="m1" class="form-lab">
+                            <input type="radio" id="m1" name="материал" class="inp__rad">
+                            Массив дерева 
+                        </label>
+                    </div>
                 </div>
                 
-                <button class="form__submit">Отправить</button>
+                <div class="calculate-form-box closet">
+                    <h3 class="calculate-form__title">ВЫСОТА ВЕРХНИХ ШКАФОВ:</h3>
+                    <div class="d-flex justify-content-between flex-wrap">
+                        <label for="closet1" class="form-lab">
+                            <input type="radio" id="closet1" name="высота шкаф" class="inp__rad" checked>
+                            720 мм.
+                        </label>
+                        <label for="closet2" class="form-lab">
+                            <input type="radio" id="closet2" name="высота шкаф" class="inp__rad">
+                            800 мм.
+                        </label>
+                        <label for="closet3" class="form-lab">
+                            <input type="radio" id="closet3" name="высота шкаф" class="inp__rad">
+                            920 мм.
+                        </label>
+                    </div>
+                </div>
+
+                <div class="calculate-form-box worktop">
+                    <h3 class="calculate-form__title">СТОЛЕШНИЦА:</h3>
+                    <div class="d-flex flex-wrap">
+                        <label for="w1" class="form-lab">
+                            <input type="radio" id="w1" name="столешница" class="inp__rad" checked>
+                            Пластиковая, толщиной 26 мм.
+                        </label>
+                        <label for="w2" class="form-lab">
+                            <input type="radio" id="w2" name="столешница" class="inp__rad" >
+                            <p>Пластиковая, толщиной 38 мм. <br>
+                                <span>(+700 руб. за 1000 мм. готового изделия)</span></p>
+                        </label>
+                        <label for="w3" class="form-lab">
+                            <input type="radio" id="w3" name="столешница" class="inp__rad" >
+                            <p>Каменная 40 мм.  <br>
+                                <span>(+12 000 руб. за 1000 мм. готового изделия)</span></p>
+                        </label>
+                    </div>
+                </div>
+                <p class="calculate-form-box__text"><span>В стоимость включена</span> вся необходимая <br>
+                    фурнитура, петли с доводчиком</p>
+                
+                <div class="calculate-form-box d-flex justify-content-between flex-wrap">
+                    <div class="form-item d-flex align-items-start flex-column">
+                        <p class="size__title">ТЕЛЕФОН</p>
+                        <input type="text" name="ТЕЛЕФОН" class="form__inp" placeholder="Ваш номер">
+                    </div>
+                    <div class="form-item d-flex align-items-start flex-column">
+                        <p class="size__title">ИМЯ</p>
+                        <input type="text" name="ИМЯ" class="form__inp" placeholder="Ваше имя">
+                    </div>
+                    <div class="form-item d-flex align-items-start flex-column">
+                        <p class="size__title">ЧЕРТЕЖ <span>(если имеется)</span></p>
+                        <label for="addFile" class="input-box position-relative mx-md-2">
+                            <input type="file" id="addFile" accept=".png, .jpg, .jpeg" class="form__inp" required>
+                            <span>Выберите файл</span>
+                            <img src="assets/img/svg/file_icon.svg" alt="" class="icon">
+                        </label>
+                        <div class="download-file d-none mx-md-2 position-relative d-flex flex-column text-center">
+                            <img src="" alt="" class="download__file">
+                            <small class="download__file-name"></small>
+                        </div>
+                    </div>
+                </div>
+                <button class="calculate-form__btn">ОТПРАВИТЬ НА РАСЧЕТ</button>
             </form>
         </div>
     </div>
 
-    <div class="popUp application d-none ">
+    <div class="popUp review d-none">
         <div class="popUp-content">
             <button class="popUp__close">
                 <svg width="16" height="16" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -700,52 +909,27 @@
                     <path d="M16.67 17.5C16.561 17.5001 16.453 17.4787 16.3523 17.437C16.2515 17.3953 16.16 17.3341 16.083 17.2569L0.743156 1.9171C0.587466 1.76141 0.5 1.55024 0.5 1.33007C0.5 1.10989 0.587466 0.898725 0.743156 0.743034C0.898847 0.587344 1.11001 0.499878 1.33019 0.499878C1.55037 0.499878 1.76153 0.587344 1.91722 0.743034L17.2571 16.0829C17.3732 16.199 17.4523 16.3469 17.4843 16.5079C17.5163 16.669 17.4999 16.8359 17.4371 16.9876C17.3742 17.1393 17.2678 17.2689 17.1313 17.3601C16.9947 17.4514 16.8342 17.5 16.67 17.5Z" fill="#1D1D1D"/>
                 </svg>
             </button>
-            <h2 class="popUp__title text-center">Вызов замерщика</h2>
-            <form class="backCall-form">
-                <div class="input-box position-relative">
-                    <input type="text" class="form__inp" placeholder="Ваше имя" required>
-                    <img src="assets/img/svg/user.svg" alt="" class="icon">
+            <div class="review-head">
+                <span class="user__name">Полина</span>
+                <span class="product__name">Кухня «Сандра»</span>
+            </div>
+            <div class="review-info">
+                <p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim vitae arcu augue ut elementum eleifend. At in ultrices ultrices nunc sed. Eget tristique mattis magna accumsan arcu. Tristique tristique eget diam purus est dolor. Morbi eget sed purus euismod quisque. Enim ut viverra consectetur fusce massa a aliquam luctus neque. Enim aliquam, nec potenti mollis. Egestas ut praesent dignissim mauris. Blandit proin quam ut nec urna, lectus. Non ut in venenatis integer ornare.</p>
+                <p class="review__text">Hendrerit fermentum sed eget nunc. Ultricies pharetra dictum et potenti adipiscing facilisis. Posuere enim cursus id ut accumsan id amet nulla. Dictum varius suspendisse quisque cursus. Pellentesque montes, mauris amet ullamcorper ac massa.</p>
+                <p class="review__text">Hendrerit penatibus neque, dictumst nulla mattis. Consectetur arcu imperdiet vivamus proin consectetur tincidunt. Suspendisse laoreet tellus eget erat nulla ut mattis. Tellus consequat et sed lacus. Commodo id integer blandit netus vitae. Et orci, eu semper aenean in. Ullamcorper amet tempor, ut adipiscing neque nisi. Gravida tincidunt mauris nibh tortor.</p>
+            </div>
+            <div class="d-flex justify-content-between flex-wrap">
+                <a href="#" class="review-item">
+                    <img src="assets/img/png/r11.png" alt="" class="review__img">
+                    <img src="assets/img/png/play.png" alt="" class="play">
+                </a>
+                <div class="review-item">
+                    <img src="assets/img/png/r11.png" alt="" class="review__img zoom">
                 </div>
-                <div class="input-box position-relative">
-                    <input type="text" class="form__inp phone" placeholder="Ваш телефон" required>
-                    <img src="assets/img/svg/call2.svg" alt="" class="icon">
+                <div class="review-item">
+                    <img src="assets/img/png/r11.png" alt="" class="review__img zoom">
                 </div>
-                <div class="input-box position-relative">
-                    <input type="text" class="form__inp" placeholder="Ваш адрес (необязательно)">
-                    <img src="assets/img/svg/add.svg" alt="" class="icon">
-                </div>
-                <div class="type-furniture">
-                    <div class="type-furniture-title d-flex align-items-center justify-content-between">
-                        <div class="d-flex align-items-center">
-                            <img src="assets/img/svg/mebel.svg" alt="" class="icon">
-                        <span class="type-furniture__active">Вид мебели</span>
-                        </div>
-                        <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.23964 0.210883C0.55916 -0.0702944 1.0772 -0.0702944 1.39672 0.210883L6 4.26177L10.6033 0.210883C10.9228 -0.070294 11.4408 -0.070294 11.7604 0.210884C12.0799 0.492061 12.0799 0.94794 11.7604 1.22912L6.57854 5.78912C6.25902 6.07029 5.74098 6.07029 5.42146 5.78912L0.23964 1.22912C-0.07988 0.947939 -0.07988 0.492061 0.23964 0.210883Z" fill="#6D845C"/>
-                        </svg>
-                    </div>
-                    <ul class="type-furniture-item">
-                        <li>Вид</li>
-                        <li>Кухня</li>
-                        <li>Шкаф-купе</li>
-                        <li>Гостиная</li>
-                        <li>Детская</li>
-                        <li>Прихожая</li>
-                        <li>Спальня</li>
-                    </ul>
-                </div>
-
-                <div class="d-flex align-items-start mt-3">
-                    <input type="checkbox" class="form__check" required checked>
-                    <p class="form__text">Я соглашаюсь на передачу персональных данных согласно
-                        <a href="#">Политике конфиденциальности</a>
-                        | 
-                        <a href="#">Пользовательскому соглашению</a>
-                    </p>
-                </div>
-                
-                <button class="form__submit">Отправить</button>
-            </form>
+            </div>
         </div>
     </div>
 
@@ -765,5 +949,6 @@
     <script src="assets/js/plugin/jquery.js"></script>
     <script src="assets/js/plugin/mask.js"></script>
     <script src="assets/js/header.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 </html>

@@ -5,14 +5,18 @@ const desiredBudget = document.querySelectorAll('.desired-budget-title'),
       seoBtn = document.querySelector('.seo-info__btn'),
       orderBtn = document.querySelectorAll('.order__btn'),
       popUpCalculate = document.querySelector('.popUp.calculate'),
-      zoomImgs = document.querySelectorAll('.project-card-head .zoom'),
+      zoomImgs = document.querySelectorAll('img.zoom'),
       popUpZoom = document.querySelector('.popUp.zoom'),
       buyBtn = document.querySelectorAll('.buy__btn'),
-      popUpBy = document.querySelector('.backCall'),
+      popUpBy = document.querySelector('.buy'),
       applicationBtns = document.querySelectorAll('.howOrder-item__btn'),
       popUpApplication = document.querySelector('.popUp.application'),
       downloadImg = document.querySelector('.download__img'),
-      addPhoto = document.getElementById('addPhoto')
+      downloadFile = document.querySelector('.download__file'),
+      addPhoto = document.getElementById('addPhoto'),
+      addFile = document.getElementById('addFile'),
+      reviewRead = document.querySelectorAll('.review__read'),
+      popUpReview = document.querySelector('.popUp.review')
 
 
 
@@ -28,6 +32,13 @@ desiredBudgetLists.forEach(elem => {
         activeText.textContent = elem.textContent;
         elem.parentElement.parentElement.classList.toggle('desiredShow')
     })
+});
+
+
+reviewRead.forEach(review => {
+  review.addEventListener('click', () => {
+    popUpReview.classList.remove('d-none')
+  })
 });
 
 
@@ -72,11 +83,6 @@ buyBtn.forEach(buy => {
 });
 
 
-applicationBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-      popUpApplication.classList.remove('d-none')
-  })
-});
 
 
 
@@ -90,6 +96,15 @@ downloadImg.parentElement.classList.remove('d-none');
 }
 });
 
+addFile.addEventListener('change', (e) => {
+  if(e.target.files.length > 0) {
+  let src = URL.createObjectURL(e.target.files[0]);
+  downloadFile.src = src;
+  addFile.parentElement.classList.add('d-none');
+  downloadFile.parentElement.classList.remove('d-none');
+    downloadFile.nextElementSibling.textContent = e.target.files[0].name
+  }
+  });
 
 const reviews = new Swiper('.swiper-review', {
     watchOverflow: true,
@@ -114,6 +129,94 @@ const reviews = new Swiper('.swiper-review', {
         },
     }
   
+  });
+
+  const ourWorkPhoto = new Swiper('.our-work .photo-swiper', {
+    watchOverflow: true,
+    slidesPerView: 1,
+    spaceBetween: 5,
+    loop: true,
+    navigation: {
+      nextEl: '.our-work .photo-swiper-btns .next',
+      prevEl: '.our-work .photo-swiper-btns .prev',
+    },
+    breakpoints: {
+      320: {
+          slidesPerView: 1,
+      },
+      576: {
+          slidesPerView: 2,
+      },
+      992: {
+          slidesPerView: 1,
+      },
+  }
+  });
+
+  const ourWorkVideo = new Swiper('.our-work .video-swiper', {
+    watchOverflow: true,
+    slidesPerView: 1,
+    spaceBetween: 5,
+    loop: true,
+    navigation: {
+      nextEl: '.our-work .video-swiper-btns .next',
+      prevEl: '.our-work .video-swiper-btns .prev',
+    },
+    breakpoints: {
+      320: {
+          slidesPerView: 1,
+      },
+      576: {
+          slidesPerView: 2,
+      },
+      992: {
+          slidesPerView: 1,
+      },
+  }
+  });
+
+  const productionPhoto = new Swiper('.production .photo-swiper', {
+    watchOverflow: true,
+    slidesPerView: 1,
+    spaceBetween: 5,
+    loop: true,
+    navigation: {
+      nextEl: '.production .photo-swiper-btns .next',
+      prevEl: '.production .photo-swiper-btns .prev',
+    },
+    breakpoints: {
+      320: {
+          slidesPerView: 1,
+      },
+      576: {
+          slidesPerView: 2,
+      },
+      992: {
+          slidesPerView: 1,
+      },
+  }
+  });
+
+  const productionVideo = new Swiper('.production .video-swiper', {
+    watchOverflow: true,
+    slidesPerView: 1,
+    spaceBetween: 5,
+    loop: true,
+    navigation: {
+      nextEl: '.production .video-swiper-btns .next',
+      prevEl: '.production .video-swiper-btns .prev',
+    },
+        breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        576: {
+            slidesPerView: 2,
+        },
+        992: {
+            slidesPerView: 1,
+        },
+    }
   });
 
 
